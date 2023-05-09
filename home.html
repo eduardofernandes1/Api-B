@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api B</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/home.css" media="all">
+    <link rel="stylesheet" href="estilos/home_alt.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+            <a href="#"><img src="imagens/Logótipo Escola.jpg" alt="Logótipo da escola Secundária Franscisco de Holanda"></a>
+            <h1>Api B</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos ab quod esse exercitationem dolores!</p>
+        <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="home.html">Página Inicial</a></li>
+                <li><a href="periodo1.html">1º Período</a></li>
+                <li><a href="periodo2.html">2º Período</a></li>
+                <li><a href="periodo3.html">3º Período</a></li>
+                <li><a href="info.html">Informações</a></li>
+            </ul>
+        </menu>
+        
+    </header>
+    <main>
+        <section>
+            <article>
+                <h1>Sobre a disciplina</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus soluta laudantium sapiente aperiam fugiat itaque similique commodi! Laborum esse corrupti dolorem. Hic quae ipsum nesciunt veritatis reprehenderit optio at rerum expedita, dolor dolorum dolorem commodi excepturi officiis fugit inventore est eos quaerat a exercitationem iure culpa explicabo ipsa ab! Repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nemo sapiente vitae ex ullam labore repudiandae, quo aut laboriosam eveniet doloremque. Accusantium illo sit aliquam ipsum eum aspernatur rem voluptas!</p>
+            </article>
+            <article>
+                <h1>Local de ensino</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dignissimos aliquam quo quaerat maiores nesciunt animi excepturi minus nemo, aliquid ea ut laboriosam esse, assumenda libero ipsa quisquam eligendi aspernatur ratione voluptas possimus, obcaecati at fuga deleniti. Delectus eos placeat aspernatur ex, officia molestias qui esse soluta numquam minima totam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis possimus, sequi accusamus provident autem natus quo aliquam. Magni quasi dolorem cupiditate aliquam labore cumque tenetur tempore! Dolores blanditiis consequatur cum!</p>
+            </article>
+            <article>
+                <h1>História da disciplina</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque itaque sapiente ad nihil quia corrupti ducimus provident reiciendis non atque, libero explicabo ut esse dolorum? Praesentium dicta excepturi numquam beatae officiis nihil similique voluptatum laboriosam. Porro vel quo similique molestias fuga! Ipsum nostrum harum soluta quo. Laudantium amet ipsa ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae molestias sapiente officia incidunt. Ipsum minus eum soluta eveniet illo optio corrupti fuga. Corporis distinctio temporibus magnam praesentium impedit, ipsum nihil.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Website realizado por Fulano.</p>
+        <p>Escola: <a href="#">Escola Secundária Francisco de Holanda</a></p>
+    </footer>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
