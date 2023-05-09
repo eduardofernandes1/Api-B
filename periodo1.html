@@ -5,33 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Api B</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/per1.css" media="all">
     <link rel="stylesheet" href="estilos/per1_alt.css">
 
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
+        <a href="#"><img src="imagens/Logótipo Escola.jpg" alt="Logótipo da escola Secundária Franscisco de Holanda"></a>
         <h1>Api B</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorum commodi inventore porro enim neque qui, iste earum mollitia possimus id magni aliquid, rem recusandae! Consequuntur fugit voluptas similique optio, ducimus blanditiis. Voluptates, velit porro, adipisci obcaecati, odio distinctio ex quam nisi molestias quia facere. Totam consequatur maxime eos repellat.</p>
-        <img src="imagens/Logótipo Escola.jpg" alt="Logótipo da escola Secundária Franscisco de Holanda">
-        <menu>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate perspiciatis labore ipsum ratione et consequatur!</p>
+        <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
-                <li>Página Inicial</li>
-                <li>1º Período</li>
-                <li>2º Período</li>
-                <li>3º Período</li>
-                <li>Informações</li>
+                <li><a href="home.html">Página Inicial</a></li>
+                <li><a href="periodo1.html">1º Período</a></li>
+                <li><a href="periodo2.html">2º Período</a></li>
+                <li><a href="periodo3.html">3º Período</a></li>
+                <li><a href="info.html">Informações</a></li>
             </ul>
         </menu>
     </header>
     <main>
         <section>
             <h1>Conceitos abordados no 1º Período</h1>
-            <article>
+            <article id="pascal">
+                <h1>Programar com Pascal</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nulla consectetur dignissimos sunt numquam dolorem provident obcaecati ullam eaque nam, veniam, delectus rem exercitationem corporis minus fugiat distinctio at. Illo id exercitationem quibusdam placeat voluptates cupiditate, doloribus magnam nam repellat, quos eaque dignissimos quasi quod quaerat a nihil illum rem dicta sint. Nesciunt tenetur ducimus aspernatur quos quam ipsam consequatur voluptatibus facilis laudantium error deleniti, molestias incidunt obcaecati labore quisquam similique magnam fuga reprehenderit dolorum ipsum delectus! Totam dolore suscipit explicabo repellat, tempore doloribus nostrum, officiis vel quod incidunt facilis quo quibusdam, maxime quam sequi sunt eos assumenda dicta nam.</p>
+            </article>
+            <article id="progc">
                 <h1>Programar em C++</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet modi eum tempore nam deleniti ipsam et eius sequi incidunt? Quas ut aut optio inventore distinctio consectetur aliquam tempora, eveniet deserunt asperiores, culpa in, magnam perferendis! Iure placeat a eveniet perspiciatis ullam enim eius magni harum velit, deserunt aperiam maxime beatae eum quam quaerat. Error repellat provident alias hic iure aut velit voluptatem aliquam itaque optio cumque, nihil ratione dicta totam veritatis ab distinctio libero. Excepturi eaque dolores officia, nam quibusdam corrupti maxime adipisci, enim magnam incidunt iure dolore laudantium unde exercitationem earum laborum natus molestias fuga neque facilis voluptatem!</p>
             </article>
-            <article>
+            <article id="appinvent">
                 <h1>Criar apps com AppInventor</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident quidem fugiat repellat vitae tenetur tempore aspernatur voluptate voluptatem saepe amet dicta dolor distinctio nulla maxime non, itaque veniam aut id. Harum, reiciendis deserunt. Illum delectus porro harum obcaecati, tempore commodi iure. Impedit animi accusamus illum laborum voluptates porro optio quibusdam, quaerat repellendus pariatur autem delectus nisi et sunt ipsam, consequuntur praesentium voluptas aliquid! Velit numquam, aliquid nisi ipsam eius autem distinctio dignissimos nostrum ex voluptates in quae deserunt unde, odio sunt eos assumenda blanditiis cupiditate quia quidem esse fugit. Eos quas vel mollitia culpa eligendi saepe fugit explicabo doloremque distinctio.</p>
             </article>
@@ -41,5 +48,24 @@
         <p>Website realizado por Fulano.</p>
         <p>Escola: <a href="#">Escola Secundária Francisco de Holanda</a></p>
     </footer>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>

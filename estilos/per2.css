@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+#cospace {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: gray;
+    line-height: 2em;
+    width: 768px;
+}
+#metaverse {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: gray;
+    line-height: 2em;
+    width: 768px;
+}
