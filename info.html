@@ -5,27 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Api B</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/info.css" media="all">
     <link rel="stylesheet" href="estilos/info_alt.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
+        <a href="#"><img src="imagens/Logótipo Escola.jpg" alt="Logótipo da escola Secundária Franscisco de Holanda"></a>
         <h1>Api B</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem officiis, doloremque laborum ut odio </p>
-        <img src="imagens/Logótipo Escola.jpg" alt="Logótipo da escola Secundária Franscisco de Holanda">
+        <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
         <menu>
             <ul>
-                <li>Página Inicial</li>
-                <li>1º Período</li>
-                <li>2º Período</li>
-                <li>3º Período</li>
-                <li>Informações</li>
+                <li><a href="home.html">Página Inicial</a></li>
+                <li><a href="periodo1.html">1º Período</a></li>
+                <li><a href="periodo2.html">2º Período</a></li>
+                <li><a href="periodo3.html">3º Período</a></li>
+                <li><a href="info.html">Informações</a></li>
             </ul>
         </menu>
     </header>
     <main>
         <section>
-            <article>
+            <article id="criterios">
                 <h1>Critérios de Avaliação da disciplina</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo mollitia animi alias unde a sunt distinctio, tempora voluptatibus quod neque laborum maxime enim labore incidunt quibusdam voluptas? Excepturi quos ipsam earum, nemo optio atque, eius ipsa natus praesentium aliquid odit reprehenderit necessitatibus laudantium libero impedit? Modi, sint! Qui perferendis, laborum dolore molestiae distinctio iure eveniet illum, quaerat omnis optio nam neque. Quod et accusamus corporis omnis aliquid aspernatur! Aliquam non ut quia dolorum iste unde, sequi officia fugiat illum aliquid. Eum ut voluptatibus fugiat reprehenderit deleniti soluta quo magni impedit ipsum placeat eos, ullam possimus nobis nostrum, neque consequatur ratione.</p>
             </article>
@@ -35,5 +38,24 @@
         <p>Website realizado por Fulano.</p>
         <p>Escola: <a href="#">Escola Secundária Francisco de Holanda</a></p>
     </footer>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>

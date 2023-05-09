@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    
+    #burger {
+        display: none;
+    }
+
+    #itens {
+        display: block;
+    }
+
+    header li {
+        display: inline-block;
+        
+    }
+
+    header > menu > ul > li > a:hover {
+        background-color: gray;
+        transition: 0.5s;
+    }
+}
