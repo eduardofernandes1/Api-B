@@ -1,21 +1,14 @@
 @charset "UTF-8";
 
-#pascal {
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: gray;
-    line-height: 2em;
-    width: 768px;
-}
 
 #progc {
+    max-width: 768px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: gray;
     line-height: 2em;
-    width: 768px;
+    
 }
 
 #appinvent {
@@ -24,5 +17,5 @@
     margin-bottom: 20px;
     background-color: gray;
     line-height: 2em;
-    width: 768px;
+    max-width: 768px;
 }
